@@ -9,7 +9,8 @@
 
 </head>
 <body>
-  <nav class="bg-[#037345] flex justify-between items-center pr-10 text-white">
+  <nav class="bg-[#037345] flex justify-between items-center pr-10 text-white fixed z-8 w-full">
+    <!-- w-full -->
     <div><img src="./images/logo2.jpeg" width="150" alt=""></div>
     <div class="flex gap-5 text-lg max-lg:hidden">
         <button>Coffee & Craft <i class="fa-solid fa-angle-down"></i></button>
@@ -25,25 +26,32 @@
   </nav>
   <!-- Hero starts -->
 
-  <header class="bg-[url(/images/img1.jpg)] bg-center bg-cover bg-no-repeat">
-    <div class="w-full grid grid-cols-2  items-center h-[100dvh] p-20 bg-black/60">
-      <h1 class="text-6xl text-white  font-semibold">Starbucks PSL is back, joined by new Pecan Oatmilk Cortado</h1>
-      <div class="flex flex-col justify-end items-center h-[100%]"><img src="./images/img2.webp" width="350" alt=""></div>
+  <header class="max-md:relative bg-[url(/images/img1.jpg)] bg-center bg-cover bg-no-repeat">
+    <div class="w-full grid md:grid-cols-2  items-center max-md:items-start max-md:pt-60 h-[120dvh] p-15 bg-black/60">
+      <div>
+        <h1 class="max-md:text-5xl text-6xl text-white  font-semibold">Starbucks PSL is back, joined by new Pecan Oatmilk Cortado</h1>
+        <div class="underline flex items-center gap-3 transition-all duration-500 text-white hover:decoration-transparent">
+          <button class="border text-white w-10 h-10 rounded-full"><i class="fa-solid fa-arrow-right "></i></button> <span class="text-white">Discover</span>
+        </div>
+      </div>
+      <div class="max-md:absolute max-md:w-[70%] -bottom-20 left-20 right-30 flex flex-col justify-end items-center w-[350px] h-[100%]"><img src="./images/img2.webp"  alt=""></div>
     </div>
   </header>
 
   <!-- Hero starts -->
 
-  <article class="text-green-950 p-10">
-    <div><h1 class="text-3xl font-semibold p-5">FALL HIGHLIGHTS</h1></div>
-    <div class="grid grid-cols-3 ">
-      <div class="border-r-1 p-5">
+  <article class="text-green-950/90 p-10 max-md:pt-30">
+    <div><h1 class="text-3xl font-semibold p-5">LATEST NEWS</h1></div>
+    <div class="grid md:grid-cols-3 ">
+      <div class="md:border-r-1 p-5">
         <p class="font-semibold mb-2">How AI powered automated counting is brewing a better experience at Starbucks </p>
         <span>News - 2 min read</span>
+        <div class="md:hidden pt-5"><hr></div>
       </div>
-      <div class="border-r-2 p-5">
+      <div class="md:border-r-2 p-5">
         <p class="font-semibold mb-2">Starbucks Goes all in on Protein: Announces Arrival of New Protein Lattes and Protein Cold Foam to the Menu on Sept. 29 </p>
         <span>News - 4 min read</span>
+        <div class="md:hidden pt-5"><hr></div>
       </div>
       <div class=" p-5">
         <p class="font-semibold mb-2">New Starbucks Fall Merchandise </p>
@@ -52,37 +60,51 @@
     </div>
   </article>
 
-  <div class="bg-[url(/images/img6.webp)] bg-center bg-cover bg-no-repeat ">
-    <div class="bg-black/50 grid grid-cols-2  items-center h-[100dvh] p-20">
-      <h1 class="text-6xl text-white ">Starbucks Reserve unveils fall menu with Pumpkin Spice favorites and new Tiramisu Latte</h1>
+  <section class="bg-[url(/images/img6.webp)] bg-center bg-cover bg-no-repeat ">
+    <div class="bg-black/50 h-[100dvh] w-full grid md:grid-cols-2  items-center max-md:items-start py-20 px-10">
+      <div>
+        <h1 class="max-md:text-5xl text-6xl text-white ">Starbucks Reserve unveils fall menu with Pumpkin Spice favorites and new Tiramisu Latte</h1>
+        <div class="underline flex items-center gap-3 transition-all duration-500 text-white hover:decoration-transparent">
+          <button class="border text-white w-10 h-10 rounded-full"><i class="fa-solid fa-arrow-right "></i></button> <span class="text-white">Discover</span>
+        </div>
+      </div>
       <div class="flex flex-col justify-end items-center h-[100%]"><img src="./images/img2.webp" width="350" alt=""></div>
     </div>
-  </div>
+  </section>
 
   <!--  -->
 
-  <main class="py-20 px-30">
-    <div class="grid grid-cols-2 gap-10">
+  <main class="py-20 px-20 md:px-30 max-md:mt-20">
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="md:hidden"><h1 class="text-4xl font-semibold  text-green-950">FALL <br> HIGHLIGHTS</h1></div>
       <div class="grid gap-5 text-xl text-gray-800">
         <img class="rounded-lg" src="./images/img7.webp" alt="">
         <p>This fall, Starbucks is launching the new Pecan Oatmilk Cortado, which combines three shots Starbucks Blonde Espresso with notes of pecan.</p>
+        <div class="underline flex items-center gap-3 transition-all duration-500 text-green-950 hover:decoration-transparent">
+          <button class="border text-green-950 w-10 h-10 rounded-full"><i class="fa-solid fa-arrow-right "></i></button> <span class="text-green-950">Discover</span>
+        </div>
       </div>
       <div class="grid gap-5 text-xl text-gray-800 pt-10 pr-15">
         <img class="rounded-lg" src="./images/img8.webp" alt="">
         <p>This fall, Starbucks is launching the new Pecan Oatmilk Cortado, which combines three shots Starbucks Blonde Espresso with notes of pecan.</p>
+        <div class="underline flex items-center gap-3 transition-all duration-500 text-green-950 hover:decoration-transparent">
+          <button class="border text-green-950 w-10 h-10 rounded-full"><i class="fa-solid fa-arrow-right "></i></button> <span class="text-green-950">Discover</span>
+        </div>
       </div>
     </div>
     <div>
-      <article class="text-green-950/90 py-10">
-      <div><h1 class="text-3xl font-semibold p-5">LATEST NEWS</h1></div>
-      <div class="grid grid-cols-3 ">
-        <div class="border-r-1 p-5">
+      <article class="text-green-950/90 md:py-10 max-md:pt-5">
+      <div class="max-md:hidden"><h1 class="text-3xl font-semibold p-5">FALL HIGHLIGHTS</h1></div>
+      <div class="grid md:grid-cols-3 ">
+        <div class="md:border-r-1 p-5">
           <p class="font-semibold mb-2">Meet the farmer who grows the pumpkins for your PSL </p>
           <span>News - 2 min read</span>
+          <div class="md:hidden pt-5"><hr></div>
         </div>
-        <div class="border-r-2 p-5">
+        <div class="md:border-r-2 p-5">
           <p class="font-semibold mb-2">Here’s a sneak peek at Starbucks new Art Deco-inspired merch collaboration </p>
           <span>News - 4 min read</span>
+          <div class="md:hidden pt-5"><hr></div>
         </div>
         <div class=" p-5">
           <p class="font-semibold mb-2">New Starbucks Fall Merchandise </p>
@@ -97,7 +119,7 @@
 
   <!--  -->
 
-  <div class="relative flex justify-center items-center h-[100dvh] ">
+  <!-- <div class="relative flex justify-center items-center h-[100dvh] ">
     <div class="absolute top-0 left-10"><img src="./images/img1.jpg" width="200" alt=""></div>
     <div class="absolute top-0 right-10"><img src="./images/img1.jpg" width="200" alt=""></div>
     <div class="absolute bottom-0 left-10"><img src="./images/img1.jpg" width="200" alt=""></div>
@@ -106,13 +128,13 @@
       <h1 class="text-6xl text-center font-semibold text-green-950/85">THERE ARE MORE REASONS TO STAY AWHILE</h1>
       <button class="py-3 px-5 rounded-full bg-green-800 text-white mt-15">Learn more</button>
     </div>
-  </div>
+  </div> -->
 
   <!--  -->
 
   <!--  -->
 
-  <div class="mt-35">
+  <!-- <div class="mt-35">
     <h1 class="px-15 text-green-950/80 font-semibold text-5xl">WHAT’S NEW</h1>
     <div class="grid gap-5 grid-cols-3 px-15">
       <div class="grid  font-semibold text-green-950/80 pt-10 pr-15">
@@ -147,13 +169,13 @@
         <span>3 MIN READ</span>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!--  -->
 
   <!--   -->
 
-  <section class="mt-20 bg-[#32462f] py-20 px-10">
+  <!-- <section class="mt-20 bg-[#32462f] py-20 px-10">
     <div class="grid grid-cols-2 gap-10 justify-between items-center text-white/90">
       <h1 class="text-5xl font-semibold">OUR IMPACT</h1>
       <p class="p-10 text-lg">We build a bridge to a better future for our partners (employees) and work with farmers around the world to ensure the future of coffee for all.</p>
@@ -174,13 +196,13 @@
     <div>
       <button>back</button>
     </div>
-  </section>
+  </section> -->
 
   <!--   -->
 
   <!--  -->
 
-  <footer class="mt-20 bg-[url(/images/nature.jpeg)] h-[100dvh] bg-no-repeat bg-center bg-cover">
+  <!-- <footer class="mt-20 bg-[url(/images/nature.jpeg)] h-[100dvh] bg-no-repeat bg-center bg-cover">
     <div class="h-full bg-black/60 flex flex-col items-center justify-center text-white text-center">
       <h1 class="text-3xl font-bold">
         THE <br> STARBUCKS <br> COFFEE <br> COMPANY
@@ -287,7 +309,7 @@
       </div>
     </section>
 
-  </footer>
+  </footer> -->
 
   <!--  -->
 
