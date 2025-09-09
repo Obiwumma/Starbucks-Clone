@@ -27,7 +27,7 @@
   <!-- Hero starts -->
 
   <header class="max-md:relative bg-[url(/images/img1.jpg)] bg-center bg-cover bg-no-repeat">
-    <div class="w-full grid md:grid-cols-2  items-center max-md:items-start max-md:pt-60 h-[120dvh] p-15 bg-black/60">
+    <div class="w-full grid md:grid-cols-2  items-center max-md:items-start max-md:pt-60 h-[80dvh] md:h-[120dvh] p-15 bg-black/60">
       <div>
         <h1 class="max-md:text-5xl text-6xl text-white  font-semibold">Starbucks PSL is back, joined by new Pecan Oatmilk Cortado</h1>
         <div class="underline flex items-center gap-3 transition-all duration-500 text-white hover:decoration-transparent">
@@ -61,7 +61,7 @@
   </article>
 
   <section class="bg-[url(/images/img6.webp)] bg-center bg-cover bg-no-repeat ">
-    <div class="bg-black/50 h-[100dvh] w-full grid md:grid-cols-2  items-center max-md:items-start py-20 px-10">
+    <div class="bg-black/50 h-[70dvh] md:h-[100dvh] w-full grid md:grid-cols-2  items-center max-md:items-start py-20 px-10">
       <div>
         <h1 class="max-md:text-5xl text-6xl text-white ">Starbucks Reserve unveils fall menu with Pumpkin Spice favorites and new Tiramisu Latte</h1>
         <div class="underline flex items-center gap-3 transition-all duration-500 text-white hover:decoration-transparent">
@@ -119,57 +119,79 @@
 
   <!--  -->
 
-  <!-- <div class="relative flex justify-center items-center h-[100dvh] ">
-    <div class="absolute top-0 left-10"><img src="./images/img1.jpg" width="200" alt=""></div>
-    <div class="absolute top-0 right-10"><img src="./images/img1.jpg" width="200" alt=""></div>
-    <div class="absolute bottom-0 left-10"><img src="./images/img1.jpg" width="200" alt=""></div>
-    <div class="absolute bottom-0 right-10"><img src="./images/img1.jpg" width="200" alt=""></div>
-    <div class="p-45 flex flex-col items-center">
-      <h1 class="text-6xl text-center font-semibold text-green-950/85">THERE ARE MORE REASONS TO STAY AWHILE</h1>
+  <div class="relative flex justify-center items-center h-[80dvh] md:h-100dvh ">
+    <div class="absolute top-0 left-10"><img src="./images/img1.jpg" class="w-28 sm:w-60" alt=""></div>
+    <div class="absolute top-0 right-10"><img src="./images/img1.jpg" class="w-28 sm:w-60" alt=""></div>
+    <div class="absolute bottom-0 left-10"><img src="./images/img1.jpg" class="w-28 sm:w-60" alt=""></div>
+    <div class="absolute bottom-0 right-10"><img src="./images/img1.jpg" class="w-28 sm:w-60" alt=""></div>
+    <div class="p-12 md:p-45 flex flex-col items-center">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl text-center font-semibold text-green-950/85">THERE ARE MORE REASONS TO STAY AWHILE</h1>
       <button class="py-3 px-5 rounded-full bg-green-800 text-white mt-15">Learn more</button>
     </div>
-  </div> -->
+  </div>
 
   <!--  -->
 
   <!--  -->
 
-  <!-- <div class="mt-35">
+  <div class="mt-35">
     <h1 class="px-15 text-green-950/80 font-semibold text-5xl">WHAT’S NEW</h1>
-    <div class="grid gap-5 grid-cols-3 px-15">
-      <div class="grid  font-semibold text-green-950/80 pt-10 pr-15">
+    <div class="grid gap-5 md:grid-cols-3 p-8 md:px-15">
+      <div class="md:hidden grid grid-cols-2">
+        <div class="grid  font-semibold text-green-950/80 pt-10 pr-15">
+          <img class="rounded-lg" src="./images/img8.webp" alt="">
+          <button class="text-sm border h-5 w-30 rounded-full">Coffee & Craft</button>
+          <p>Starbucks Reserve unveils summer menu with new Ube Espresso Martini </p>
+          <span>5 MIN READ</span>
+        </div>
+        <div class="grid gap-5 font-semibold text-green-950/80 pt-10 pr-15">
+          <img class="rounded-lg" src="./images/img8.webp" alt="">
+          <button class="text-sm border h-5 w-30 rounded-full">People & Impact</button>
+          <p>Congrats to Nobuki representing Japan, the First-Ever Starbucks Global Barista Champion </p>
+          <span>4 MIN READ</span>
+        </div>
+      </div>
+
+      <!--  -->
+
+      <div class="grid max-md:hidden font-semibold text-green-950/80 pt-10 pr-15">
         <img class="rounded-lg" src="./images/img8.webp" alt="">
         <button class="text-sm border h-5 w-30 rounded-full">Coffee & Craft</button>
         <p>Starbucks Reserve unveils summer menu with new Ube Espresso Martini </p>
         <span>5 MIN READ</span>
-
       </div>
-      <div class="grid gap-5 font-semibold text-green-950/80 pt-10 pr-15">
+      <div class="grid max-md:hidden gap-5 font-semibold text-green-950/80 pt-10 pr-15">
         <img class="rounded-lg" src="./images/img8.webp" alt="">
         <button class="text-sm border h-5 w-30 rounded-full">People & Impact</button>
         <p>Congrats to Nobuki representing Japan, the First-Ever Starbucks Global Barista Champion </p>
         <span>4 MIN READ</span>
       </div>
-      <div class="grid gap-5 text-white bg-[#32462f] py-10 px-8 rounded-lg relative">
+      <div class="max-sm:hidden grid gap-5 text-white bg-[#32462f] py-10 px-8 rounded-lg relative">
         <img class="p-8 absolute top-[-100px]" src="./images/img8.webp" alt="">
         <h1 class="text-3xl mt-10">Starbucks teams up with Oprah</h1>
         <p>Each month from a Starbucks cafe, Oprah will host an author selected as part of her book club.</p>
         <button class="border py-2 px-3 rounded-full">Watch the episodes</button>
       </div>
-      <div class="grid gap-5 font-semibold text-green-950/80 pt-10 pr-15">
+      <div class="grid gap-5 font-semibold text-green-950/80 pt-10 md:pr-15">
         <img class="rounded-lg" src="./images/img8.webp" alt="">
         <button class="text-sm border h-5 w-30 rounded-full">Coffee & Craft</button>
         <p>Starbucks celebrates Ethiopia’s coffee legacy with new single-origin coffee </p>
         <span>5 MIN READ</span>
       </div>
-      <div class="grid gap-5 font-semibold text-green-950/80 pt-10 pr-15">
+      <div class="grid gap-5 font-semibold text-green-950/80 pt-10 md:pr-15 max-md:mb-20">
         <img class="rounded-lg" src="./images/img8.webp" alt="">
         <button class="text-sm border h-5 w-30 rounded-full">Coffee & Craft</button>
         <p>6 Starbucks coffee pairings that may surprise you </p>
         <span>3 MIN READ</span>
       </div>
+      <div class="sm:hidden grid gap-5 text-white bg-[#32462f] py-10 px-8 rounded-lg relative ">
+        <img class="p-8 absolute top-[-100px]" src="./images/img8.webp" alt="">
+        <h1 class="text-xl md:text-3xl max-md:mt-20  mt-10">Starbucks teams up with Oprah</h1>
+        <p>Each month from a Starbucks cafe, Oprah will host an author selected as part of her book club.</p>
+        <button class="border py-2 px-3 rounded-full">Watch the episodes</button>
+      </div>
     </div>
-  </div> -->
+  </div>
 
   <!--  -->
 
