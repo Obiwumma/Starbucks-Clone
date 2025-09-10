@@ -272,13 +272,16 @@
     
     <section class="px-15">
       <hr>
-      <div class="flex items-center justify-center gap-10 text-xl font-semibold text-[#32462f] my-10">
+      <div class="flex max-md:flex-col max-md:items-start max-md:gap-2 items-center justify-center gap-10 text-xl font-semibold text-[#32462f] my-10">
         <Button class="hover:border-gray-800 border border-white py-2 px-3 rounded-full">Starbucks.com</Button>
         <Button class="hover:border-gray-800 border border-white py-2 px-3 rounded-full">Career Center</Button>
         <Button class="hover:border-gray-800 border border-white py-2 px-3 rounded-full">Reserve</Button>
         <Button class="hover:border-gray-800 border border-white py-2 px-3 rounded-full">At Home</Button>
+        <div class="md:hidden">
+          <h1><i class="fa-solid fa-earth-europe py-2 px-3"></i>Choose a region ></h1>
+        </div>
       </div>
-      <div class="grid grid-cols-6 pb-10">
+      <div class="grid grid-cols-6 pb-10 max-md:hidden">
         <div class="flex flex-col gap-2">
           <h1 class="font-semibold text-gray-800">Canada</h1>
           <ul class="underline text-gray-800">
@@ -320,15 +323,15 @@
         </div>
       </div>
       <hr>
-      <div class="flex text-gray-800 py-8">
-        <div class="underline flex flex-wrap gap-5">
+      <div class="flex max-md:flex-col max-md:items-center max-md:justify-center max-md:gap-5 text-gray-800 py-8">
+        <div class="underline flex flex-wrap max-md:justify-center max-md:items-center gap-5">
           <a href="" class="pr-8">Starbucks.com</a>
           <a href="" class="pr-8">Accessibility</a>
           <a href="" class="pr-8">Privacy Notice</a>
           <a href="" class="pr-8">Do Not Share My Personal Information</a>
           <a href="" class="pr-8">Cookie Preferences</a>
         </div>
-        <div class="w-[30rem] flex justify-end">
+        <div class="md:w-[30rem] flex justify-end">
           <p>© 2025 Starbucks Coffee Company</p>
         </div>
       </div>
